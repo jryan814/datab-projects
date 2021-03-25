@@ -2,7 +2,7 @@
 Time for some 'data sciencing'
 
 ## Project Selection
-I selected these projects to showcase some of the work I have done. They were chosen based on several factors, such as my personal interest in the project, the technical skills used, and the overall genre of it's application.
+I selected these projects to showcase some of the work I have done. They were chosen based on several factors, such as my personal interest in the project, the technical skills used, and the overall genre of it's application. Virtually all of the data I have worked with has been unstructured, requiring some degree of cleaning, transforming, and reconstructing.
 
 Some of the python modules used are:  
 - Pandas
@@ -30,3 +30,5 @@ Technical Skills Used:
   - Implementation of multiple machine learning models to predict volume of bike rentals.
 - war_on_spam.ipynb
   - SMS spam filter created using a Naive Bayes Algorithm to classify messages as spam or non-spam.
+- predict_beta.py
+  - Stock Market predictions via linear regression (using SciKitLearn).
