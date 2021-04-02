@@ -21,7 +21,7 @@ Technical Skills Used:
 - Deep Learning
 - Web Scraping & APIs
 
-## Project Descriptions
+## Project Descriptions (wip)
 - HNproject.ipynb
   - Analysis to determine optimal times to post on Hacker News.
 - advertising_analysis.ipynb
