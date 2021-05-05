@@ -6,9 +6,10 @@ I selected these projects to showcase some of the work I have done. They were ch
 
 Some of the python modules used are:  
 - Pandas
-- Matplotlib & Seaborn
+- NumPy
+- Matplotlib
 - Seaborn
-- SQLite (SQLAlchemy and SQLite3)
+- SQLite (sqlalchemy and sqlite3)
 - scikitlearn
 
 Technical Skills Used:
