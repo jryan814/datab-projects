@@ -1,4 +1,4 @@
-# datab-projects
+# datab-projects [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jryan814/datab-projects/HEAD)
 Time for some 'data sciencing'
 
 ## Project Selection
