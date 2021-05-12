@@ -4,7 +4,7 @@ Time for some 'data sciencing'
 ## Project Selection
 I selected these projects to showcase some of the work I have done. They were chosen based on several factors, such as my personal interest in the project, the technical skills used, and the overall genre of it's application. Virtually all of the data I have worked with has been unstructured, requiring some degree of cleaning, transforming, and reconstructing.
 
-Some of the python modules used are:  
+Some of the libraries used are:  
 - Pandas
 - NumPy
 - Matplotlib
