@@ -23,6 +23,11 @@ Technical Skills Used:
 - Web Scraping & APIs
 
 ## Project Descriptions (wip)
+- Business Intelligence Tool Development
+  -	Queried and extracted data subset (xxx,xxx records) from Federal Procurement Data System (FPDS) based on NAICS codes, business size, and recency.
+  -	Wrote Python and SQL scripts to report key business analytics to identify and target competitor companies, ranking by size and level of activity.
+  -	Created visualizations in Tableau and Jupyter Notebooks to represent key market spaces.
+  -	Reported detailed analytics on relevant competitor entities to enable improved business competition and identify potential targets for acquisition. 
 - HNproject.ipynb
   - Analysis to determine optimal times to post on Hacker News.
 - advertising_analysis.ipynb
