@@ -38,3 +38,5 @@ Technical Skills Used:
   - SMS spam filter created using a Naive Bayes Algorithm to classify messages as spam or non-spam.
 - predict_beta.py
   - Stock Market predictions via linear regression (using SciKitLearn).
+- agraph.py
+  - An AI maze solver. Generates nodes and edges based off the `maze` array. `TODO: create maze image input, and a graphical output`
