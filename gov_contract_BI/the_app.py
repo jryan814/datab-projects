@@ -19,7 +19,7 @@ st.set_page_config(page_title='Biz Intel for Gov Contracting', page_icon='random
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.title('Business Intelligence for Government Contracting', 'gov_contracting')
-st.write("### For NAICS code range 5416's")
+st.write("### For NAICS code range 5416's for Small Businesses in Target Range")
 target = 'TOEROEK ASSOCIATES INC'
 data = pd.read_csv('cleaned_gov_contracts_data.csv')
 
@@ -32,9 +32,6 @@ selection = st.selectbox('Company selection', company_names)
 
 naics_codes = data['naics_code'].unique()
 naics_data = data.groupby(['naics_code', 'Company']).agg({'dollars_obligated': 'sum', 'number_of_awards': 'nunique'}).reset_index()
-# naics_selection = st.multiselect('Select NAICS codes', naics_codes)
-
-# st.write(selection)
     
 left, right = st.beta_columns([5,5])
    
@@ -56,10 +53,14 @@ def company_profile(co_name, data):
     return fig, fig2, naics_cats, other_info
 
 fig, fig2, d, other = company_profile(selection, data)
+other_award = other['award_total']
+other_dollars = other['dollar_total']
 with left:
     st.plotly_chart(fig)
-    st.info(selection)
-    st.info('Total Awards: ' + str(other['award_total']) + ' | ' + ' Total Dollars: $' + str(other['dollar_total']))
+    st.info(f'Total Dollars Obligated: ${other_dollars}')
+    
 with right:
     st.plotly_chart(fig2)
+    st.info(f'Total Awards Rec: {other_award}')
+st.info(selection)
 st.write(d)
