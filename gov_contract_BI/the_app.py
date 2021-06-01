@@ -33,7 +33,7 @@ selection = st.selectbox('Company selection', company_names)
 naics_codes = data['naics_code'].unique()
 naics_data = data.groupby(['naics_code', 'Company']).agg({'dollars_obligated': 'sum', 'number_of_awards': 'nunique'}).reset_index()
     
-
+#@st.cache(suppress_st_warning=True)
 def date_picker(data):
     col1, col2, _, _ = st.beta_columns(4)
     with col1:
@@ -41,7 +41,7 @@ def date_picker(data):
     with col2:
         end_date = st.date_input('To', dt.datetime(2020, 12, 31))
     try:
-        data = data[data['action_date'].between(start_date, end_date)]
+        data = data[data['action_date'].between(str(start_date), str(end_date))]
     except:
         st.write('date picker problem')
     return data
