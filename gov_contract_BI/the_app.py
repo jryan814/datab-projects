@@ -33,7 +33,7 @@ selection = st.selectbox('Company selection', company_names)
 naics_codes = data['naics_code'].unique()
 naics_data = data.groupby(['naics_code', 'Company']).agg({'dollars_obligated': 'sum', 'number_of_awards': 'nunique'}).reset_index()
     
-@st.cache(suppress_st_warning=True, allow_output_mutation=True)
+
 def date_picker(data):
     col1, col2, _, _ = st.beta_columns(4)
     with col1:
