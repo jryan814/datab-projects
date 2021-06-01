@@ -12,10 +12,6 @@ import datetime as dt
 
 style.use('fivethirtyeight')
 
-from pathlib import Path
-
-#data_file = Path(__file__).parents[1] / 'cleaned_gov_contracts_data.csv'
-
 pd.options.display.max_columns = 50
 
 
