@@ -33,11 +33,26 @@ selection = st.selectbox('Company selection', company_names)
 naics_codes = data['naics_code'].unique()
 naics_data = data.groupby(['naics_code', 'Company']).agg({'dollars_obligated': 'sum', 'number_of_awards': 'nunique'}).reset_index()
     
+@st.cache(suppress_st_warning=True, allow_output_mutation=True)
+def date_picker(data):
+    col1, col2, _, _ = st.beta_columns(4)
+    with col1:
+        start_date = st.date_input('From', dt.datetime(2018,1,1))
+    with col2:
+        end_date = st.date_input('To', dt.datetime(2020, 12, 31))
+    try:
+        data = data[data['action_date'].between(start_date, end_date)]
+    except:
+        st.write('date picker problem')
+    return data
+data = date_picker
+
+
 left, right = st.beta_columns([5,5])
    
     
     
-@st.cache(suppress_st_warning=True)
+@st.cache(suppress_st_warning=True, allow_output_mutation=True)
 def company_profile(co_name, data):
     co_data = data[data['Company'] == co_name]
     naics_cats = co_data.groupby(['naics_code']).agg({'dollars_obligated': 'sum'})
