@@ -12,6 +12,10 @@ import datetime as dt
 
 style.use('fivethirtyeight')
 
+from pathlib import Path
+
+data_file = Path(__file__).parents[1] / 'cleaned_gov_contracts_data.csv'
+
 pd.options.display.max_columns = 50
 
 
@@ -21,7 +25,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title('Business Intelligence for Government Contracting', 'gov_contracting')
 st.write("### For NAICS code range 5416's for Small Businesses in Target Range")
 target = 'TOEROEK ASSOCIATES INC'
-data = pd.read_csv('cleaned_gov_contracts_data.csv')
+data = pd.read_csv(data_file)
 
 data = data.rename(columns={'recipient_name': 'Company', 'award_id': 'number_of_awards'})
 data['naics_code'] = data['naics_code'].astype(str)
