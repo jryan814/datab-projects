@@ -45,7 +45,7 @@ def date_picker(data):
     except:
         st.write('date picker problem')
     return data
-data = date_picker
+data = date_picker()
 
 
 left, right = st.beta_columns([5,5])
