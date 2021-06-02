@@ -78,4 +78,4 @@ with right:
     st.plotly_chart(fig2)
     st.info(f'Total Awards Rec: {other_award}')
 st.info(selection)
-st.write(d.style.format('{:.2f'}))
+st.write(d.style.format('{:.2f}'))
