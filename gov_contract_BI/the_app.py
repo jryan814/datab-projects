@@ -72,10 +72,10 @@ other_award = other['award_total']
 other_dollars = other['dollar_total']
 with left:
     st.plotly_chart(fig)
-    st.info(f'Total Dollars Obligated: ${other_dollars}')
+    st.info(f'Total Dollars Obligated: ${other_dollars:,.2f}')
     
 with right:
     st.plotly_chart(fig2)
     st.info(f'Total Awards Rec: {other_award}')
 st.info(selection)
-st.write(d.style.format('{:.2f}'))
+st.write(d.style.format('${:,.2f}'))
