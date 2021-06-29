@@ -1,3 +1,3 @@
 # Government Contracts Pipeline
-Processes a raw flat file and creates SQL database
+ETL pipeline to SQL database  
 Running manage.py executes the program.
