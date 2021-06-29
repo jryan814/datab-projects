@@ -79,8 +79,3 @@ with right:
     st.info(f'Total Awards Rec: {other_award}')
 st.info(selection)
 st.write(d.style.format('${:,.2f}'))
-st.markdown('''### Methodology for Company Selections:  
-All ranges centered around the primary company's dollars obligated and number of awards
-- Must have done business in 2020.
-- Numbers used for calculation are between Jan 2018 and Dec 2020.
-- Dollars obligated and number of awards +/- 2 standard deviations of primary company.''')
