@@ -32,6 +32,7 @@ def fill_nulls(df):
     df['parent_award_agency_id'] = df['parent_award_agency_id'].fillna(df['awarding_sub_agency_code'])
     df['award_description'] = df['award_description'].fillna('unknown')
     df['award_id'] = df['award_id'].fillna(df['award_piid_ref'])
+    df['recipient_duns'] =  df['recipient_duns'].astype('object')
     return df
 
 # resolve missing data for international places of performance

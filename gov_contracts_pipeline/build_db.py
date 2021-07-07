@@ -1,6 +1,7 @@
 
 import sqlite3
 import settings
+import numpy as np
 
 
 class DB:
@@ -14,6 +15,8 @@ class DB:
         args:
             new_build: (bool) whether to use as connection class or to build the database.
         '''
+        sqlite3.register_adapter(np.int32, str)
+        sqlite3.register_adapter(np.int64, str)
         db_name = settings.DB_PATH  # db filepath defined in settings.py--for non-sqlite implementation this will need to be changed.
         self.conn = sqlite3.connect(db_name)
         if row_factory_list:
@@ -89,7 +92,7 @@ class DB:
             recipient_name VARCHAR(255) PRIMARY KEY,
             recipient_city VARCHAR(255),
             recipient_zip_code_5 INTEGER,
-            recipient_duns VARCHAR(20)
+            recipient_duns TEXT
         );''',
         '''PRAGMA foreign_keys = ON;''']
         for build in build_db:

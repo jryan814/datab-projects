@@ -98,8 +98,11 @@ def last_task(data):
     db.close_conn()
     return data
 
-pipeline.run(None)
-end = time()
-print('-'*30)
-print('seconds to complete:', round(end-start, 1))
-print('-'*30)
+
+if __name__ == '__main__':
+    pipeline.run(None)
+    
+    end = time()
+    print('-'*30)
+    print('seconds to complete:', round(end-start, 1))
+    print('-'*30)
