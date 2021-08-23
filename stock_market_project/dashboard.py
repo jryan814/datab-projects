@@ -30,7 +30,7 @@ def get_data(ticker: str=None) -> tuple:
 # Gets data from feature store pipeline
 X_, X, y, df = get_data(ticker=ticker_selection)
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 
 def modeler(X: pd.DataFrame=X, y: pd.Series=y, df: pd.DataFrame=df, X_: pd.DataFrame=X_, model: str=model_selection) -> None:
@@ -64,7 +64,7 @@ def modeler(X: pd.DataFrame=X, y: pd.Series=y, df: pd.DataFrame=df, X_: pd.DataF
     with col2:
         st.header('Previous Predictions & Actuals:')
         st.write(last_5_predictions)
-    container1 = st.beta_container()
+    container1 = st.container()
     
     set_range = st.sidebar.select_slider('Select number of days to view on graph', options = np.arange(10, 800), value=410)
     dd = display_df.tail(set_range)
