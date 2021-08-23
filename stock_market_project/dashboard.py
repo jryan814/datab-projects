@@ -74,7 +74,7 @@ def modeler(X: pd.DataFrame=X, y: pd.Series=y, df: pd.DataFrame=df, X_: pd.DataF
     # st.line_chart(df_slice[['close', 'prediction']])
     container1.plotly_chart(fig)
     st.write('Overall RMSE for model:', round(stock_model.rmse(),4))
-    st.sidebar.write('These predictions should not be taken as actual financial advise. It is only intended to showcase a machine learning project')
+    st.sidebar.write('These predictions should not be taken as actual financial advice. It is only intended to showcase a machine learning project')
 
 modeler()
 
