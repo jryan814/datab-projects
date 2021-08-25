@@ -24,6 +24,7 @@ Technical Skills Used:
 
 ## Project Descriptions (wip)
 - Business Intelligence Tool Development (subfolder)
+  - Engineered ETL pipeline (cleans/transforms and loads flat file into a star schema database).
   -	Queried and extracted data subset (xxx,xxx records) from Federal Procurement Data System (FPDS) based on NAICS codes, business size, and recency.
   -	Wrote Python and SQL scripts to report key business analytics to identify and target competitor companies, ranking by size and level of activity.
   -	Created visualizations in Tableau and Jupyter Notebooks to represent key market spaces.
@@ -36,7 +37,8 @@ Technical Skills Used:
   - Implementation of multiple machine learning models to predict volume of bike rentals.
 - war_on_spam.ipynb
   - SMS spam filter created using a Naive Bayes Algorithm to classify messages as spam or non-spam.
-- predict_beta.py
-  - Stock Market predictions via linear regression (using SciKitLearn).
+- __[stock_market_project Dashboard](https://share.streamlit.io/jryan814/datab-projects/main/stock_market_project/dashboard.py)__
+  - Stock market machine learning pipeline.
+  - Feature engineering and model training pipelines are in the stock_market_project dir.
 - agraph.py
   - An AI maze solver. Generates nodes and edges based off the `maze` array. `TODO: create maze image input, and a graphical output`
