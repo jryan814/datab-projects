@@ -1,3 +1,9 @@
+########################################
+#
+# SEE MY NEWLY CREATED VERSION IN THE stock_market_project
+#
+########################################
+
 
 import pandas as pd
 from datetime import datetime as dt
