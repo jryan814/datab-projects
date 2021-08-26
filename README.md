@@ -9,8 +9,8 @@ Some of the libraries used are:
 - NumPy
 - Matplotlib
 - Seaborn
-- SQLite (sqlalchemy and sqlite3)
-- scikitlearn
+- SQL (SQLite, SQLalchemy, PostgreSQL)
+- scikitlearn  
 
 Technical Skills Used:
 - Python
