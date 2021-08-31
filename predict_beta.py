@@ -1,3 +1,12 @@
+#############################################################################################
+#                                                                                           #
+#         SEE MY NEWLY CREATED VERSION IN THE stock_market_project folder                   #
+#                                                                                           #
+#         OR see the dashboard @                                                            #
+# https://share.streamlit.io/jryan814/datab-projects/main/stock_market_project/dashboard.py #
+#                                                                                           #
+#############################################################################################
+
 
 import pandas as pd
 from datetime import datetime as dt
